@@ -78,7 +78,7 @@ function App() {
               <hr className="p-0 border-0 h-[12px] w-[85px] bg-green-700"/>
             </div>
         </div>
-        <div className="p-10">
+        <div className="p-10">  
           <Tabs defaultValue="contact" className="w-[400px] border border-[#41739e]">
             <TabsList className="w-[398px] border-b border-[#41739e]">
               <TabsTrigger value="contact">Contact</TabsTrigger>
@@ -91,7 +91,17 @@ function App() {
           </Tabs>
         </div>
         <div className="p-10">
-        <Table className="w-[500px]">
+        <div>
+
+        <Card className="w-[501px]">
+            <CardHeader className="relative">
+              <CardTitle>#01 Dispatch Plan</CardTitle>
+            </CardHeader>
+         </Card> 
+         </div>
+
+        <div className="table border border-[#41739e] border-collapse"> 
+        <Table className="w-[500px]" >
 		<TableBody className=" w-[500px]">
                 <TableRow className="h-[22px]">
                     <TableCell className="w-[18px] text-green-700 text-[1.1em] font-bold">✓</TableCell>    
@@ -160,6 +170,8 @@ function App() {
                 </TableRow>   
 		</TableBody>
             </Table>
+            
+        </div>
         </div>
       </div>
     </>
